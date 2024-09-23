@@ -42,7 +42,8 @@ def quiz():
 
         return render_template('resultado.html', pontuacao=pontuacao, total=len(perguntas))
 
-    return render_template('quiz.html', perguntas=perguntas)
+    # Aqui passamos explicitamente a função enumerate para o Jinja2
+    return render_template('quiz.html', perguntas=perguntas, enumerate=enumerate)
 
 if __name__ == '__main__':
     app.run(debug=True)
