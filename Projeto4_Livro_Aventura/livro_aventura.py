@@ -42,3 +42,5 @@ elif resposta == "direita":
     
 else:
     print("\nEssa não é uma opção válida, você perdeu!")
+    
+print("\nObrigado por jogar, ", nome)
