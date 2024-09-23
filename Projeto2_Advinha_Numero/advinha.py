@@ -39,10 +39,9 @@ while True:
     if advinha == num_aleatorio:
         print("\nVocê acertou!")
         break
+    elif advinha > num_aleatorio:
+        print("O número digitado é maior que o número aleatório")
     else:
-        if advinha > num_aleatorio:
-            print("O número digitado é maior que o número aleatório")
-        else:
-            print("O número digitado é menor que o número aleatório")
+        print("O número digitado é menor que o número aleatório")
         
 print("\nVocê acertou em ", tentativas, " tentativas")
