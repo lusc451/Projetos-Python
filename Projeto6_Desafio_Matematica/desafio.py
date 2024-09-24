@@ -38,7 +38,7 @@ for i in range(TOTAL_PROBLEMAS):
         resp_erradas += 1
         
 tempo_fim = time.time()
-tempo_total = tempo_fim - tempo_comeco
+tempo_total = round(tempo_fim - tempo_comeco, 2)
 
 print("--------------------------")
 print("Mandou bem! Você terminou em ", tempo_total, " segundos!")
